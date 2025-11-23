@@ -187,7 +187,7 @@ public class TagReader {
         
         // 🔥 Reduce DG2 chunk size for slow passports
 //        if let dg = currentlyReadingDataGroup, dg == .DG2 {
-            maxDataLengthToRead = 0x40   // try 64 bytes per APDU
+            maxDataLengthToRead = 0x20   // try 64 bytes per APDU
 //        }
         var readAmount : Int = maxDataLengthToRead
 
